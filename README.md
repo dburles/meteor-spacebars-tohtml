@@ -1,7 +1,7 @@
 Meteor Spacebars.toHTML
 =======================
 
-A simple helper function to assist with rendering spacebars to HTML.
+A simple helper function to assist with rendering spacebars to HTML. Works on both the server and the client.
 
 # API
 
