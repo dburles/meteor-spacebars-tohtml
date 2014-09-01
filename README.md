@@ -38,7 +38,7 @@ var html = Spacebars.toHTML({ name: 'foo' }, Assets.getText('example.html'));
 
 ## Iron Router
 
-We can also serve templates using [Iron Router's](https://atmospherejs.com/package/iron-router) server site routes.
+We can also serve templates using [Iron Router's](https://atmospherejs.com/package/iron-router) server side routes.
 
 Here's a simple example:
 
