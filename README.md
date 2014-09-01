@@ -60,6 +60,37 @@ Router.map(function() {
 });
 ```
 
+## Template inclusion
+
+Currently there's no way to pull in templates using the `{{> inclusion}}` operator, though we can create our own helper to do much the same thing.
+
+```js
+UI.registerHelper('include', function(template, data) {
+  data = data || {};
+  return Spacebars.toHTML(data, Assets.getText(template));
+});
+```
+
+and within our template, for example:
+
+```html
+<nav>
+  {{{include 'navigation.html'}}}
+</nav>
+...
+```
+
+We can also pass in an optional data context:
+
+```html
+<nav>
+  {{{include 'navigation.html' navItems}}}
+</nav>
+...
+```
+
+Note that we use the triple-stash here so the HTML is not escaped.
+
 # License
 
 MIT
