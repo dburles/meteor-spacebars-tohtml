@@ -13,7 +13,7 @@ Spacebars.toHTML({ name: 'foo' }, '<p>Hello {{name}}</p>');
 
 Any helpers defined with `UI.registerHelper` will be rendered just like usual. If you're on the server you'll need to make sure they're not just defined on the client so it can see them.
 
-## Server side rendering
+## Rendering templates on the server
 
 We can render templates on the server by creating files within the `private` directory.
 
