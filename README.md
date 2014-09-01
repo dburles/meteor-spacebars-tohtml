@@ -1,4 +1,4 @@
-meteor-spacebars-tohtml
+Meteor Spacebars.toHTML
 =======================
 
 A simple helper function to assist with rendering spacebars to HTML.
