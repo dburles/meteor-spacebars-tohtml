@@ -6,12 +6,6 @@ Package.describe({
 
 Package.onUse(function (api) {
   api.versionsFrom('METEOR@0.9.0');
-  api.use(['spacebars', 'spacebars-compiler']);
+  api.use(['spacebars@1.0.0', 'spacebars-compiler@1.0.1']);
   api.addFiles('spacebars-tohtml.js');
-});
-
-Package.onTest(function (api) {
-  api.use('tinytest');
-  api.use('spacebars-tohtml');
-  api.addFiles('spacebars-tohtml-tests.js');
 });
