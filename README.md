@@ -62,6 +62,8 @@ Router.map(function() {
 
 ## Template inclusion
 
+*Server side only*
+
 Currently there's no way to pull in templates using the `{{> inclusion}}` operator, though we can create our own helper to do much the same thing.
 
 ```js
