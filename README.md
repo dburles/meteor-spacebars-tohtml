@@ -38,6 +38,8 @@ We can then render it using Meteor's [Assets API](http://docs.meteor.com/#assets
 var html = Spacebars.toHTML({ name: 'foo' }, Assets.getText('example.html'));
 ```
 
+This is very useful for sending HTML emails.
+
 ## Iron Router
 
 We can also serve templates using [Iron Router's](https://atmospherejs.com/package/iron-router) server side routes.
