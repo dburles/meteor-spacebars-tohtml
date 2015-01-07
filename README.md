@@ -47,19 +47,13 @@ We can also serve templates using [Iron Router's](https://atmospherejs.com/packa
 Here's a simple example:
 
 ```js
-Router.map(function() {
-  this.route('test', {
-    where: 'server',
-    path: '/test',
-    action: function() {
-      // This could also come from a Collection
-      var data = { name: 'foo' };
-      
-      this.response.writeHead(200, { 'Content-Type': 'text/html' });
-      this.response.end(Spacebars.toHTML(data, Assets.getText('example.html')));
-    }
-  }
-});
+Router.route('/test', function() {
+  // This could also come from a Collection
+  var data = { name: 'foo' };
+  
+  this.response.writeHead(200, { 'Content-Type': 'text/html' });
+  this.response.end(Spacebars.toHTML(data, Assets.getText('example.html')));
+}, { where: 'server' });
 ```
 
 ## Template inclusion
