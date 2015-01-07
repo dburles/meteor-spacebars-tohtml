@@ -63,7 +63,7 @@ Router.route('/test', function() {
 Currently there's no way to pull in templates using the `{{> inclusion}}` operator, though we can create our own helper to do much the same thing.
 
 ```js
-UI.registerHelper('include', function(template, data) {
+Template.registerHelper('include', function(template, data) {
   data = data || {};
   return Spacebars.toHTML(data, Assets.getText(template));
 });
