@@ -1,7 +1,11 @@
 Meteor Spacebars.toHTML
 =======================
 
-A simple helper function to assist with rendering spacebars to HTML. Works on both the server and the client.
+A simple helper function to assist with rendering spacebars to HTML. Works on both the server and the client. To add this package to your application, just run in your terminal:
+
+```lang-bash
+meteor add dburles:spacebars-tohtml
+```
 
 # API
 
